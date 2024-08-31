@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: bisque;
+            font: normal 13pt arial;
+        }
+        main {
+            background-color: white;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.477);
+        }
+    </style>
+    <title>De que país você é?</title>
+</head>
+<body>
+    <main>
+        <h1>De que país você é?</h1>
+        Qual seu páis: <input type="text" name="txt" id="txt">
+        <input type="button" value="enviar" onclick="clicar()">
+        <div id="res">
+        </div>
+    </main>
+
+    <script>
+        function clicar() {
+            var p = document.getElementById('txt')
+            var l = (p.value)
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Seu país atual é: <strong>${l}</strong></p>`
+            if (l == 'Brasil' || l == 'brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            }else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
