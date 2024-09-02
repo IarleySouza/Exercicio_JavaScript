@@ -8,14 +8,28 @@
 </head>
 <body>
     <header>
-
+        <h1>Vamos contar</h1>
     </header>
     <section>
         <div>
-
+            <p>
+                <label for="inicio">Inicio:</label>
+                <input type="number" name="ini" id="inicio">
+            </p>
+            <p>
+                <label for="fim">Fim:</label>
+                <input type="number" name="fi" id="fim">
+            </p>
+            <p>
+                <label for="passo">Passo:</label>
+                <input type="number" name="pas" id="passo">
+            </p>
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
         </div>
-        <div>
-
+        <div id="res">
+            Preparando a contagem...
         </div>
     </section>
     <footer>
