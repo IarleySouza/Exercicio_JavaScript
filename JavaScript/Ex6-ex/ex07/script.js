@@ -4,7 +4,7 @@ function tabuada() {
     var res = document.getElementById('res')
     while (cont <= 10) {
         var tab = cont * Number(nu.value)
-        res.innerHTML = `${nu.value} x ${cont} = ${tab}`
+        res.innerHTML += `${nu.value} x ${cont} = ${tab} <br>`
         cont++
         
     }
