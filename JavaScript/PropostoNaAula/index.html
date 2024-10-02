@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: aqua;
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        .button:hover {
+            background-color: rgb(5, 207, 207);
+        }
+
+        #img {
+            margin: 10px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="img">
+            <img src="../Ex4-ex/ex05/manha.jpg" alt="imagem da manha" width="60px">
+        </div>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">contato</a>
+            <a href="#">agenda</a>
+        </nav>
+        <div class="button">
+            <p>login</p>
+        </div>
+    </header>
+</body>
+
+</html>
